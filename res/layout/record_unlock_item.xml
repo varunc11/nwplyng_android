@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <ImageView
+        android:id="@+id/recordDialogPick"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:contentDescription="@string/contentDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    
+    <TextView 
+        android:id="@+id/recordDialogName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingLeft="8dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/recordDialogPick"
+        android:gravity="left"
+        android:layout_marginTop="20dp"/>
+    
+    <TextView 
+        android:id="@+id/recordDialogDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_below="@+id/recordDialogName"
+        android:textColor="#555555"
+        android:layout_marginTop="6dp"/>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/recordDialogDescription"/>
+
+</RelativeLayout>

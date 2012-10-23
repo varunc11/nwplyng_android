@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/post_dialog_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#E3E3E3" >
+    
+     <RelativeLayout 
+        android:id="@+id/topbar_post_play"
+        android:layout_width="fill_parent"
+        android:layout_height="47dip"
+        android:gravity="center_vertical"
+        android:background="@drawable/navigation">
+        
+        <Button 
+            android:id="@+id/donebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:text="@string/done_button"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:background="@color/transparent"
+            android:layout_alignParentRight="true"/>
+        
+    </RelativeLayout>
+    
+    
+    <TextView 
+        android:id="@+id/message_to_user"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:singleLine="false"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@+id/topbar_post_play"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/selector_rounded_corners"/>
+    
+    <TextView 
+        android:id="@+id/managerTag"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_to_user"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_light"
+        android:text="@string/manager"
+        android:background="@android:color/darker_gray"/>
+    
+    <RelativeLayout 
+        android:id="@+id/manager_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/managerTag"
+        android:layout_margin="10dip"
+        android:padding="10dp"
+        android:background="@drawable/selector_rounded_corners">
+        
+        <TextView 
+            android:id="@+id/managerText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/managerImage"
+            android:layout_marginRight="5dip"
+            android:layout_marginLeft="3dip"/>
+        
+        <ImageView 
+            android:id="@+id/managerImage"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:background="@drawable/pro"
+            android:contentDescription="@string/contentDescription"
+            android:layout_alignParentRight="true"/>
+        
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/careerTag"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/manager_layout"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_light"
+        android:text="@string/career_progression"
+        android:background="@android:color/darker_gray"/>
+    
+    <RelativeLayout 
+        android:id="@+id/career_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/careerTag"
+        android:layout_margin="10dip"
+        android:padding="10dp"
+        android:background="@drawable/selector_rounded_corners">
+        
+        <TextView 
+            android:id="@+id/promotedText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:layout_toLeftOf="@+id/careerImage"
+            android:layout_marginRight="5dip"
+            android:layout_marginLeft="3dip"/>
+        
+        <TextView 
+            android:id="@+id/careerText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:layout_toLeftOf="@+id/careerImage"
+            android:layout_below="@+id/promotedText"
+            android:layout_marginRight="5dip"
+            android:layout_marginLeft="3dip"/>
+        
+        <ImageView 
+            android:id="@+id/careerImage"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:contentDescription="@string/contentDescription"
+            android:layout_alignParentRight="true"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

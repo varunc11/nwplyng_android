@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#E3E3E3" >
+    
+     <RelativeLayout 
+        android:id="@+id/topbar_friend_profile"
+        android:layout_width="fill_parent"
+        android:layout_height="47dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/blank_navigation">
+        
+         <Button 
+            android:id="@+id/backButtonFriendProfile"
+            android:layout_width="50dp"
+            android:layout_height="47dp"
+       		android:layout_centerVertical="true"
+       		android:background="@drawable/left_arrow"/>
+        
+        <TextView 
+            android:id="@+id/friendProfileHeadline"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/backButtonFriendProfile"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/activityIndicator_friendProfile"/>
+        
+        <ProgressBar
+            android:id="@+id/activityIndicator_friendProfile"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true" />
+        
+    </RelativeLayout>
+    
+     <ScrollView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/topbar_friend_profile"
+	    android:layout_marginTop="10dp"
+	    android:scrollbars="none">
+    
+     <RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+         
+	<RelativeLayout
+	    android:id="@+id/titleLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginRight="15dp"
+	    android:layout_marginLeft="15dp"
+	    android:padding="5dp"
+	    android:background="@drawable/field_back_ground">
+	    
+	    <ImageView
+	    android:id="@+id/friendProfileImage"
+	    android:layout_width="70dp"
+	    android:layout_height="70dp"
+	    android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:scaleType="centerCrop"
+	    android:src="@drawable/pro"
+	    android:contentDescription="@string/contentDescription"/>
+
+
+	    <TextView
+	        android:id="@+id/friendProfileName"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="8dp"
+	        android:layout_toRightOf="@+id/friendProfileImage"
+	        android:layout_alignTop="@+id/friendProfileImage"
+	        android:textSize="17sp"
+	        android:textStyle="bold"/>
+
+	    	<TextView
+	        android:id="@+id/fullName"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/friendProfileName"
+	        android:layout_marginLeft="8dp"
+	        android:layout_marginTop="-2dp"
+	        android:layout_toRightOf="@+id/friendProfileImage"/>
+
+	    <Button
+		    android:id="@+id/FollowStatusButton"
+		    android:layout_width="50dp"
+		    android:layout_height="30dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_below="@+id/fullName"
+		    android:background="@drawable/unfollow"/>
+
+	</RelativeLayout>
+	
+<!-- 	<RelativeLayout -->
+<!-- 	    android:id="@+id/followSatusLayout" -->
+<!-- 	    android:layout_width="fill_parent" -->
+<!-- 	    android:layout_height="wrap_content" -->
+<!-- 	    android:layout_below="@+id/titleLayout" -->
+<!-- 	    android:background="#FFFFFF" -->
+<!-- 	    android:padding="10dp" -->
+<!-- 	    android:layout_marginRight="15dp" -->
+<!-- 	    android:layout_marginLeft="15dp" -->
+<!-- 	     > -->
+
+<!-- 		<Button -->
+<!-- 		    android:id="@+id/FollowStatusButton" -->
+<!-- 		    android:layout_width="50dp" -->
+<!-- 		    android:layout_height="30dp" -->
+<!-- 		    android:layout_alignParentRight="true" -->
+<!-- 		    android:layout_alignParentTop="true" -->
+<!-- 		    android:background="@drawable/unfollow"/> -->
+	    
+<!-- 	</RelativeLayout> -->
+
+	<RelativeLayout
+	    android:id="@+id/friendLastPlayedLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="45dp"
+	    android:layout_below="@+id/titleLayout"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginRight="15dp"
+	    android:layout_marginLeft="15dp"
+	    android:background="@drawable/field_back_ground">
+	    
+	    <TextView 
+	        android:id="@+id/lpStatic"
+	        android:layout_width="wrap_content"
+	        android:layout_height="45dp"
+	        android:text="@string/lp"
+	        android:gravity="center"
+	        android:textStyle="bold"
+	        android:layout_marginLeft="10dp"/>
+	    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/lpStatic"
+	        android:layout_marginLeft="5dp"
+	        android:orientation="vertical">
+	        
+	        <TextView
+		    	android:id="@+id/friendlastPlayedSong"
+			    android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="left"
+		    	android:layout_marginTop="3dp"
+		    	android:singleLine="true"
+		    	android:textStyle="bold"/>
+		
+			<TextView 
+		    	android:id="@+id/friendlastPlayedArtist"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="left"
+		    	android:textSize="13sp"
+		    	android:singleLine="true"/>
+	        
+	   </LinearLayout>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+	    android:id="@+id/friendPlaysLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="45dp"
+	    android:layout_below="@+id/friendLastPlayedLayout"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="0.2dp"
+	    android:background="@drawable/field_back_ground" >
+
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="13dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="12dp"
+	        android:contentDescription="@string/contentDescription"
+	        android:src="@drawable/right_arrow" />
+
+	    <TextView
+	        android:id="@+id/numberOfPlays"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="10dp"
+	        android:layout_toLeftOf="@+id/imageView1"
+	        android:textStyle="bold" />
+
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginBottom="5dp"
+	        android:textStyle="bold"
+	        android:text="@string/plays" />
+
+	</RelativeLayout>
+	
+	<RelativeLayout
+	    android:id="@+id/friendManagesLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="45dp"
+	    android:layout_below="@+id/friendPlaysLayout"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:layout_marginBottom="0.2dp"
+	    android:background="@drawable/field_back_ground" >
+
+	    <ImageView
+	        android:id="@+id/imageView2"
+	        android:layout_width="13dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="12dp"
+	        android:contentDescription="@string/contentDescription"
+	        android:src="@drawable/right_arrow" />
+
+	    <TextView
+	        android:id="@+id/numberOfManages"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="10dp"
+	        android:layout_toLeftOf="@+id/imageView2"
+	        android:textStyle="bold" />
+
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginBottom="5dp"
+	        android:textStyle="bold"
+	        android:text="@string/manages" />
+
+	</RelativeLayout>
+	
+	<RelativeLayout
+	    android:id="@+id/friendRecordsLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="45dp"
+	    android:layout_below="@+id/friendManagesLayout"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:layout_marginBottom="0.2dp"
+	    android:background="@drawable/field_back_ground" >
+
+	    <ImageView
+	        android:id="@+id/imageView3"
+	        android:layout_width="13dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="12dp"
+	        android:contentDescription="@string/contentDescription"
+	        android:src="@drawable/right_arrow"  />
+
+	    <TextView
+	        android:id="@+id/numberOfRecords"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="10dp"
+	        android:layout_toLeftOf="@+id/imageView3"
+	        android:textStyle="bold" />
+
+	    <TextView
+	        android:id="@+id/textView3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginBottom="5dp"
+	        android:textStyle="bold"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/records"/>
+
+	</RelativeLayout>
+	
+	<RelativeLayout
+	    android:id="@+id/friendCareerLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="45dp"
+	    android:layout_below="@+id/friendRecordsLayout"
+	    android:layout_marginBottom="10dp"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:background="@drawable/field_back_ground" >
+
+	    <ImageView
+	        android:id="@+id/imageView5"
+	        android:layout_width="13dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="12dp"
+	        android:contentDescription="@string/contentDescription"
+	        android:src="@drawable/right_arrow" />
+
+	    <TextView
+	        android:id="@+id/friendCareer"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="10dp"
+	        android:layout_toLeftOf="@+id/imageView5"
+	        android:layout_centerVertical="true"
+	        android:textStyle="bold" />
+
+	    <TextView
+	        android:id="@+id/textView5"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginBottom="5dp"
+	        android:textStyle="bold"
+	        android:text="@string/career" />
+
+	</RelativeLayout>
+
+	<RelativeLayout
+	    android:id="@+id/friendFollowersLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="45dp"
+	    android:layout_below="@+id/friendCareerLayout"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:layout_marginBottom="0.2dp"
+	    android:background="@drawable/field_back_ground" >
+
+	    <ImageView
+	        android:id="@+id/imageView4"
+	        android:layout_width="13dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="12dp"
+	        android:contentDescription="@string/contentDescription"
+	        android:src="@drawable/right_arrow"  />
+
+	    <TextView
+	        android:id="@+id/numberOfFollowers"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="10dp"
+	        android:layout_toLeftOf="@+id/imageView4"
+	        android:textStyle="bold" />
+
+	    <TextView
+	        android:id="@+id/textView4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:textStyle="bold"
+	        android:text="@string/followers" 
+	        android:layout_marginTop="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginBottom="5dp"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+	    android:id="@+id/friendFollowingLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="45dp"
+	    android:layout_below="@+id/friendFollowersLayout"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:background="@drawable/field_back_ground" >
+
+	    <ImageView
+	        android:id="@+id/imageView6"
+	        android:layout_width="13dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="12dp"
+	        android:contentDescription="@string/contentDescription"
+	        android:src="@drawable/right_arrow"  />
+
+	    <TextView
+	        android:id="@+id/numberOfFollowing"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="10dp"
+	        android:layout_toLeftOf="@+id/imageView6"
+	        android:textStyle="bold" />
+
+	    <TextView
+	        android:id="@+id/textView6"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:textStyle="bold"
+	        android:text="@string/Following"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginBottom="5dp" />
+
+	</RelativeLayout>
+	
+	<TextView 
+	    android:layout_height="40dp"
+	    android:layout_width="fill_parent"
+	    android:layout_below="@+id/friendFollowingLayout"/>
+	
+	</RelativeLayout>
+	</ScrollView>
+
+</RelativeLayout>

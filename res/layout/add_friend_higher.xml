@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:focusableInTouchMode="true"
+    android:background="#E3E3E3">
+    
+    <RelativeLayout
+        android:id="@+id/topbar_addfriendhigher"
+        android:layout_width="fill_parent"
+        android:layout_height="47dip"
+        android:gravity="center_vertical"
+        android:background="@drawable/blank_navigation">
+        
+        <Button 
+            android:id="@+id/addFriendHigherBackButton"
+            android:layout_width="50dp"
+            android:layout_height="47dp"
+       		android:layout_centerVertical="true"
+       		android:background="@drawable/left_arrow"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/addFriendHigherBackButton"
+            android:textColor="@android:color/white"
+            android:singleLine="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/add_friend"/>
+        
+<!--         <Button  -->
+<!--             android:id="@+id/searchForFriend" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="fill_parent" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_marginRight="10dp" -->
+<!--             android:background="@android:drawable/ic_search_category_default"/> -->
+        
+    </RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/friendSearchListHigher"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar_addfriendhigher"
+        android:scrollbarStyle="outsideOverlay"
+        android:cacheColorHint="@android:color/transparent"/>
+
+</RelativeLayout>

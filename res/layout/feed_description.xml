@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/screen"
+    android:background="#E3E3E3" >
+    
+    <RelativeLayout 
+        android:id="@+id/topbar_feed_description"
+        android:layout_width="fill_parent"
+        android:layout_height="47dip"
+        android:gravity="center_vertical"
+        android:background="@drawable/blank_navigation">
+        
+        <Button 
+            android:id="@+id/backButtonFeedDescription"
+            android:layout_width="50dp"
+            android:layout_height="47dp"
+       		android:layout_centerVertical="true"
+       		android:background="@drawable/left_arrow"/>
+        
+        <TextView 
+            android:id="@+id/feedDescriptionHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/backButtonFeedDescription"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:textStyle="bold"/>
+        
+        <Button 
+            android:id="@+id/feed_itunes"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/go_itunes"/>
+        
+     </RelativeLayout>
+     
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="15dp"
+        android:scrollbars="none"
+        android:layout_below="@+id/topbar_feed_description">
+        
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+    <RelativeLayout 
+        android:id="@+id/profileLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="2dp"
+        android:background="@drawable/field_back_ground">
+        
+        <ImageView
+            android:id="@+id/friend_user_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@+id/time_n_Location_of_feed"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+        	android:contentDescription="@string/contentDescription"
+        	android:background="@drawable/pro"/>
+        
+        <TextView 
+       		android:id="@+id/friendUserName"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_toRightOf="@+id/friend_user_image"
+        	android:layout_alignParentTop="true"
+        	android:layout_marginTop="5dip"
+        	android:textSize="17sp"
+        	android:layout_marginLeft="8dip"
+        	android:gravity="left"
+        	android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/friendCompleteName"
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_toRightOf="@+id/friend_user_image"
+        	android:layout_below="@+id/friendUserName"
+        	android:layout_marginLeft="8dp"
+	        android:layout_marginTop="-2dp"
+	        android:textSize="15dp"/>
+        
+        <TextView 
+            android:id="@+id/friendCareerPosition"
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_toRightOf="@+id/friend_user_image"
+        	android:layout_below="@+id/friendCompleteName"
+        	android:layout_marginTop="5dip"
+        	android:layout_marginLeft="5dip"
+        	android:textStyle="bold"/>
+        
+         <TextView 
+            android:id="@+id/time_n_Location_of_feed"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@+id/friendCareerPosition"
+        	android:gravity="center_vertical"
+        	android:layout_marginLeft="10dp"
+        	android:singleLine="true"
+        	android:layout_marginTop="5dp"
+        	android:textColor="@android:color/darker_gray"
+	        android:paddingRight="3dip"/>
+         
+         <TextView 
+             android:id="@+id/feedDescriptionArrow"
+             android:layout_width="13dp"
+             android:layout_height="17dp"
+             android:layout_alignParentRight="true"
+	         android:layout_centerVertical="true"
+	         android:background="@drawable/right_arrow"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/songsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/profileLayout"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/field_back_ground">
+        
+        <TextView 
+            android:id="@+id/feed_song"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dip"
+            android:paddingLeft="5dp"
+            android:layout_marginRight="2dip"
+            android:layout_toLeftOf="@+id/feed_itunes"/>
+        
+         <TextView 
+            android:id="@+id/feed_artist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="2dip"
+            android:singleLine="true"
+            android:layout_marginRight="2dip"
+            android:paddingLeft="5dp"
+            android:layout_toLeftOf="@+id/feed_itunes"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:id="@+id/dynamicLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/songsLayout"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+ 		android:layout_marginBottom="15dp"
+ 		android:orientation="vertical">
+        
+        <TextView 
+        	android:id="@+id/commentblock"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:minHeight="40dp"
+        	android:gravity="center"
+        	android:layout_marginBottom="15dp"
+        	android:background="@drawable/field_back_ground"/>
+        
+        <RelativeLayout 
+        	android:id="@+id/videoBlock"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:padding="8dp"
+        	android:layout_marginBottom="15dp"
+        	android:background="@drawable/field_back_ground">
+        
+        <ImageView
+            android:id="@+id/youtube_thumbnail"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/contentDescription"
+            android:background="@drawable/utube"/>
+        
+        <TextView
+        	android:id="@+id/titleofYTVideo"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentTop="true"
+        	android:layout_marginLeft="10dp"
+        	android:layout_alignTop="@+id/youtube_thumbnail"
+        	android:layout_alignBottom="@+id/youtube_thumbnail"
+        	android:layout_toRightOf="@+id/youtube_thumbnail"
+        	android:layout_toLeftOf="@+id/youtubeVideoArrow"
+        	android:textSize="13sp"
+        	android:maxLines="3"
+        	android:textStyle="bold"
+        	/>
+
+        <TextView
+            android:id="@+id/uploadDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/titleofYTVideo"
+            android:layout_alignLeft="@+id/titleofYTVideo"
+            android:textSize="10sp"/>
+        
+        <TextView 
+             android:id="@+id/youtubeVideoArrow"
+             android:layout_width="13dp"
+             android:layout_height="17dp"
+             android:layout_alignParentRight="true"
+	         android:layout_centerVertical="true"
+	         android:background="@drawable/right_arrow"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:id="@+id/feedPhotoLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp"
+        android:visibility="invisible"
+        android:orientation="vertical"
+        android:background="@drawable/field_back_ground">
+    
+    <ImageView 
+        android:id="@+id/photo_from_feed"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible"
+        android:contentDescription="@string/contentDescription"
+        android:adjustViewBounds="true"
+		android:scaleType="centerCrop"/>
+    
+<!--     android:scaleType="fitCenter" -->
+    
+    </LinearLayout>
+        
+    </LinearLayout>
+    
+    </RelativeLayout>
+    
+     </ScrollView>
+
+</RelativeLayout>

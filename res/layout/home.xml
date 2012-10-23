@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent" >
+    
+    <RelativeLayout 
+        android:id="@+id/topbar_home"
+        android:layout_width="fill_parent"
+        android:layout_height="47dip"
+        android:gravity="center_vertical"
+        android:background="@drawable/navigation">
+        
+<!--         <Button  -->
+<!--             android:id="@+id/playbutton" -->
+<!--             android:layout_width="50dip" -->
+<!--             android:layout_height="fill_parent" -->
+<!--             android:background="@drawable/app_icon" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_alignParentRight="true"/> -->
+
+        <TextView
+            android:id="@+id/notification_number"
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bub"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
+            android:gravity="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+        
+         <ProgressBar
+            android:id="@android:id/progress"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true" />
+        
+    </RelativeLayout>
+
+    <TabHost 
+        android:id="@android:id/tabhost"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="47dp"
+            android:layout_weight="0"/>
+        
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0"/>
+        
+    </LinearLayout>
+    
+    </TabHost>
+
+</LinearLayout>

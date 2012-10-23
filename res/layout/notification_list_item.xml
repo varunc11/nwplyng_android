@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/field_back_ground"
+    android:padding="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    
+    <ImageView 
+        android:id="@+id/notificationImage"
+        android:layout_width="50dip"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dip"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/contentDescription"
+        android:background="@drawable/pro"/>
+    
+    <TextView 
+        android:id="@+id/notificationMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/notificationImage"
+        android:layout_toLeftOf="@+id/notificationArrow"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dip"/>
+    
+    <TextView 
+        android:id="@+id/notificationTime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/notificationImage"
+        android:layout_alignBottom="@+id/notificationImage"
+        android:textColor="@color/nwplyng_alphabet"
+        android:gravity="right"
+        android:textSize="10sp"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"/>
+    
+    <TextView 
+       android:id="@+id/notificationArrow"
+       android:layout_width="13dp"
+       android:layout_height="17dp"
+       android:layout_alignParentRight="true"
+	   android:layout_centerVertical="true"
+	   android:background="@drawable/right_arrow"/>
+
+</RelativeLayout>

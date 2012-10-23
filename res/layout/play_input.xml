@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/inputBackgroundLay"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:focusableInTouchMode="true"
+    android:background="#E3E3E3">
+    
+<!--     <RelativeLayout  -->
+<!--         android:id="@+id/topbar_play" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="47dip" -->
+<!--         android:background="@drawable/navigation1"> -->
+        
+<!--         <Button  -->
+<!--             android:id="@+id/backButtonPlayInput" -->
+<!--             android:layout_width="50dp" -->
+<!--             android:layout_height="47dp" -->
+<!--        		android:layout_centerVertical="true" -->
+<!--        		android:background="@drawable/left_arrow"/> -->
+        
+<!--         <TextView  -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="fill_parent" -->
+<!--             android:gravity="center" -->
+<!--             android:layout_toRightOf="@+id/backButtonPlayInput" -->
+<!--             android:textColor="@android:color/white" -->
+<!--             android:textSize="18sp" -->
+<!--             android:textStyle="bold" -->
+<!--             android:singleLine="true"/> -->
+        
+<!--     </RelativeLayout> -->
+    
+	 <TextView 
+        android:id="@+id/trackSearchLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/track_search"
+        android:textSize="18sp"
+        android:layout_above="@+id/trackSearchInputBox"
+        android:gravity="center"/>
+    
+    <EditText 
+        android:id="@+id/trackSearchInputBox"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="70dp"
+        android:layout_above="@+id/centerline"
+        android:hint="@string/song_name"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:imeOptions="actionSearch"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@drawable/rounded_text_field"
+        android:inputType="textVisiblePassword"/>
+    
+    <TextView 
+        android:id="@+id/centerline"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"/>
+    
+    
+</RelativeLayout>

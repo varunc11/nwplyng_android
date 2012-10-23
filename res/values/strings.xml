@@ -1,0 +1,123 @@
+<resources>
+
+    <string name="app_name">#nwplyng</string>
+    <string name="contentDescription">logo</string>
+    <string name="title_activity_home">nwplyng</string>
+    
+    <string name="revert">reset</string>
+    
+    <string name="facebook">facebook</string>
+    <string name="twitter">twitter</string>
+    <string name="foursquare">foursquare</string>
+    
+    <string name="play">play</string>
+    
+    
+    <string name="unique">choose a username</string>
+    <string name="hint">enter here</string>
+    <string name="go">GO!</string>
+    
+    <string name="track_search">what are you listening to?</string>
+    <string name="search">Search</string>
+    <string name="song_name">enter an artist or a song name here</string>
+    
+    <string name="loading_feeds">loading&#8230;</string>
+    <string name="no_feeds">sorry, no feeds to display</string>
+    <string name="no_more_feeds">finished loading feeds</string>
+    
+    <string name="notification">notifications</string>
+    
+    <string name="change">change</string>
+    <string name="comment">add comment</string>
+    <string name="hint_location" >add a location</string>
+   	<string name="hint_video">add a youtube video</string>
+    
+    <string name="manager">manager</string>
+    <string name="career_progression">career progression</string>
+    <string name="career">career</string>
+    
+    <string name="ok_button">OK</string>
+    <string name="done_button">done</string>
+    <string name="close">close</string>
+    <string name="searchHere">search here</string>
+    <string name="save">save</string>
+    
+    <string name="settings">settings</string>
+    <string name="add_friend">add friends</string>
+    
+    <string name="career_check">Email on Career Progression</string>
+    <string name="manager_email_check">Email on becoming Manager</string>
+    <string name="manager_ousted_check">Email on ousted as Manager</string>
+    <string name="record_check">Email on Record Unlock</string>
+    <string name="following_check">Email on user following</string>
+    
+    <string name="unfollow">unfollow</string>
+    <string name="follow">follow</string>
+    
+    <string name="friend_search">look for a friend</string>
+    
+    
+    <string name="email_notification">Email Notification</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="logout">Logout</string>
+   
+    <string name="plays">plays</string>
+    <string name="manages">manages</string>
+    <string name="records">picks</string>
+    <string name="followers">followers</string>
+    <string name="Following">following</string>
+    
+    <string name="followStatus">follow status</string>
+    
+    
+    <string name="badge_nwplyng">#nwplyng</string>
+    <string name="badge_beatle">Beatlemania</string>
+    <string name="badge_best_of">Best Of</string>
+    <string name="badge_billiboard">Billiboard</string>
+    <string name="badge_busted">Busted</string>
+    <string name="badge_dj">DJ</string>
+    <string name="badge_eargasm">Eargasm</string>
+    <string name="badge_encore">Encore</string>
+    <string name="badge_fan">Fan</string>
+    <string name="badge_grammy">Grammy</string>
+    <string name="badge_groupie">Groupie</string>
+    <string name="badge_hbd">HBD</string>
+    <string name="badge_imusic">iMusic</string>
+    <string name="badge_junkie">Junkie</string>
+    <string name="badge_music_executive">Music Executive</string>
+    <string name="badge_night_owl">Night Owl</string>
+    <string name="badge_on_the_road">On The Road</string>
+    <string name="badge_punk">Punk</string>
+    <string name="badge_single">Single</string>
+    <string name="badge_top">Top 40</string>
+    <string name="badge_vip">VIP Access</string>
+    <string name="badge_wmd">WMD</string>
+    
+    <string name="login_using">log in using</string>
+	    
+    <string name="record_unlock_title">YOU UNLOCKED A PICK!</string>
+    <string name="record_unlock_continue">CONTINUE</string>
+    
+    <string name="lp">lp:</string>
+    
+    <string name="feed_description">feed description</string>
+    <string name="song_list">song list</string>
+    <string name="near_locations">locations</string>
+    <string name="manages_headline">manages</string>
+	<string name="play_headline">play</string>
+	<string name="yt_videos">youtube videos</string>
+	<string name="picks_headline">picks</string>
+	<string name="pick_headline">pick</string>
+	<string name="plays_headline">plays</string>
+	
+	<string name="post_button">post</string>
+	<string name="reset_button">reset</string>
+	
+	<string name="request_failed">Request Failed</string>
+	
+	<string name="find_friends">find friends</string>
+	<string name="search_users">search users</string>
+	<string name="search_nwplyng">search for nwplyng user</string>
+    
+</resources>

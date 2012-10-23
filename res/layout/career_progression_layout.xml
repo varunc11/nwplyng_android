@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@android:color/white" >
+    
+    <RelativeLayout 
+        android:id="@+id/topbar_bigcareer"
+        android:layout_width="fill_parent"
+        android:layout_height="47dip"
+        android:gravity="center_vertical"
+        android:background="@drawable/blank_navigation">
+        
+        <Button 
+            android:id="@+id/backButtonCareerProgression"
+            android:layout_width="50dp"
+            android:layout_height="47dp"
+       		android:layout_centerVertical="true"
+       		android:background="@drawable/left_arrow"/>
+        
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/backButtonCareerProgression"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/carrerProgressBar"
+            android:text="@string/career"/>
+
+        <ProgressBar
+            android:id="@+id/carrerProgressBar"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true" />
+        
+    </RelativeLayout>
+    
+    <ImageView
+        android:id="@+id/bigCareerPick"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/topbar_bigcareer"
+        android:contentDescription="@string/contentDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    
+    <RelativeLayout
+        android:id="@+id/bigCareerDescriptionLayout" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/bigCareerPick"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+        
+        <TextView 
+            android:id="@+id/careerPickName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/careerPickDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+      		android:layout_below="@+id/careerPickName"
+      		android:textSize="16sp"/>
+        
+        <TextView 
+            android:id="@+id/careerPickUnlockTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_below="@+id/careerPickDescription"
+            android:layout_marginTop="10dp"/>
+        
+        <TextView 
+            android:id="@+id/carrerPickUnlockTime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_below="@+id/careerPickUnlockTitle"/>
+        
+        <TextView 
+            android:id="@+id/nextCareerLevelDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/carrerPickUnlockTime"/>
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>

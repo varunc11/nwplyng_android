@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/white" >
+    
+    <RelativeLayout 
+        android:id="@+id/topbar_bigbadge"
+        android:layout_width="fill_parent"
+        android:layout_height="47dip"
+        android:gravity="center_vertical"
+        android:background="@drawable/blank_navigation">
+        
+        <Button 
+            android:id="@+id/backButtonPick"
+            android:layout_width="50dp"
+            android:layout_height="47dp"
+       		android:layout_centerVertical="true"
+       		android:background="@drawable/left_arrow"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:id="@+id/userPickNameDisplay"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/backButtonPick"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:singleLine="true"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/topbar_bigbadge"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        
+        <ImageView
+        android:id="@+id/bigPick"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:contentDescription="@string/contentDescription"/>
+        
+        <RelativeLayout
+        android:id="@+id/bigPickDescriptionLayout" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp">
+        
+        <TextView 
+            android:id="@+id/pickName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/pickDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+      		android:layout_below="@+id/pickName"/>
+        
+        <TextView 
+            android:id="@+id/pickUnlockTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_below="@+id/pickDescription"
+            android:layout_marginTop="10dp"/>
+        
+        <TextView 
+            android:id="@+id/pickUnlockTime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:layout_below="@+id/pickUnlockTitle"
+            android:layout_marginTop="5dp"/>
+        
+    </RelativeLayout>
+        
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>

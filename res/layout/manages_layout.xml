@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E3E3E3">
+
+    <RelativeLayout 
+        android:id="@+id/topbar_follow_list"
+        android:layout_width="fill_parent"
+        android:layout_height="47dip"
+        android:gravity="center_vertical"
+        android:background="@drawable/blank_navigation">
+        
+        <Button 
+            android:id="@+id/backButtonManages"
+            android:layout_width="50dp"
+            android:layout_height="47dp"
+       		android:layout_centerVertical="true"
+       		android:background="@drawable/left_arrow"/>
+        
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/backButtonManages"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/progressBarManages"
+            android:text="@string/manages_headline"/>
+        
+        <ProgressBar
+            android:id="@+id/progressBarManages"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true" />
+        
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@+id/managesList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/topbar_follow_list"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:background="@color/transparent" />
+
+</RelativeLayout>

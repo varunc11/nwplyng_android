@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mindhelix.nwplyng"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
+    
+        <supports-screens android:anyDensity="true" />
+        <uses-permission android:name="android.permission.INTERNET"/>
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+        <uses-feature android:name="android.hardware.camera"/>
+
+    <application
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splash"
+            android:label="@string/title_activity_home" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".PrepareRequestTokenActivity" android:launchMode="singleTask">>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="x-oauthflow-twitter" android:host="callback" />
+			</intent-filter>
+		</activity>
+        
+        <activity android:name=".Feed" android:screenOrientation="portrait" />
+        <activity android:name=".Profile" android:screenOrientation="portrait" />
+        <activity android:name=".Home" android:screenOrientation="portrait" />
+        <activity android:name=".UniqueNameInput" android:screenOrientation="portrait"/>
+		<activity android:name=".Login" android:screenOrientation="portrait"/>
+		<activity android:name=".PlaySearchInputScreen" android:screenOrientation="portrait" />
+		<activity android:name=".PlayItems" android:screenOrientation="portrait"/>
+		<activity android:name=".Notifications" android:screenOrientation="portrait"/>
+		
+		<activity android:name=".Itunes_searchlistActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".SearchListActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".PostPlayActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".NearLocationList" android:screenOrientation="portrait"/>
+        
+        <activity android:name=".UserSettings" android:screenOrientation="portrait"/>
+        <activity android:name=".AddFriend" android:screenOrientation="portrait"/>
+        
+        <activity android:name=".FeedDescription" android:screenOrientation="portrait"/>
+        <activity android:name=".PlaysListActivity" android:screenOrientation="portrait"/>
+        
+        <activity android:name=".FollowListActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".FriendsProfile" android:screenOrientation="portrait"/>
+        
+        <activity android:name=".EmailNotifications" android:screenOrientation="portrait"/>
+        <activity android:name=".TermsNPrivacy" android:screenOrientation="portrait"/>
+        
+        <activity android:name=".UserRecordDescription" android:screenOrientation="portrait"/>
+        <activity android:name=".UserBadges" android:screenOrientation="portrait"/>
+        
+        <activity android:name=".ManagesActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".CareerProgression" android:screenOrientation="portrait"/>
+        
+        <activity android:name=".AddFriendsAdvanced" android:screenOrientation="portrait"/>
+        <activity android:name=".SocialNetworkFriendsList" android:screenOrientation="portrait"/>
+        
+<!--         <activity android:name=".AddFriendHigher" android:screenOrientation="portrait" android:launchMode="singleTop"> -->
+<!-- 			<intent-filter> -->
+<!--             	<action android:name="android.intent.action.SEARCH" /> -->
+<!--         	</intent-filter> -->
+<!-- 	        <meta-data android:name="android.app.searchable" -->
+<!--                    android:resource="@xml/searchable_friend"/> -->
+<!--     	</activity> -->
+        
+        
+    </application>
+    
+
+
+</manifest>

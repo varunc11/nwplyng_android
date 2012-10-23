@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/field_back_ground"
+    android:layout_marginLeft="10dp"
+    android:paddingBottom="2dp"
+    android:layout_marginRight="10dp">
+    
+    <ImageView 
+        android:id="@+id/friendProfilePic"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/pro"
+        android:contentDescription="@string/contentDescription"/>
+    
+    <TextView 
+        android:id="@+id/friendUserName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/friendProfilePic"
+        android:layout_toLeftOf="@+id/videoIcon"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="5dp"/>
+    
+    <ImageView 
+        android:id="@+id/videoIcon"
+        android:layout_height="18dp"
+        android:layout_width="18dp"
+        android:layout_toLeftOf="@+id/photoIcon"
+        android:contentDescription="@string/contentDescription"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/video_camera"/>
+    
+    <ImageView 
+        android:id="@+id/photoIcon"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/contentDescription"
+        android:background="@drawable/camera"/>
+    
+    <TextView 
+        android:id="@+id/song_n_Artist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/friendProfilePic"
+        android:layout_below="@+id/friendUserName"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="-2dp"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:gravity="center_vertical"/>
+    
+    <TextView 
+        android:id="@+id/commentForTrack"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/friendProfilePic"
+        android:layout_below="@+id/song_n_Artist"
+        android:layout_marginRight="5dp"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:layout_marginTop="-1dp"
+        android:gravity="center_vertical"
+        android:textColor="#555555"/>
+    
+    <TextView 
+        android:id="@+id/time_n_Location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/friendProfilePic"
+        android:layout_below="@+id/commentForTrack"
+        android:gravity="right"
+        android:paddingRight="3dp"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:singleLine="true"
+        android:textColor="#C0C0C0"
+        android:layout_marginRight="5dp"/>
+    
+    
+
+</RelativeLayout>

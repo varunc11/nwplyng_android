@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:background="#E3E3E3">
+    
+    <RelativeLayout 
+        android:id="@+id/topbar_bigbadge"
+        android:layout_width="fill_parent"
+        android:layout_height="47dip"
+        android:gravity="center_vertical"
+        android:background="@drawable/navigation1">
+        
+        <Button 
+            android:id="@+id/backButtoniTunes"
+            android:layout_width="50dp"
+            android:layout_height="47dp"
+       		android:layout_centerVertical="true"
+       		android:background="@drawable/left_arrow"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/backButtoniTunes"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:layout_marginRight="15dp"/>
+
+        <ProgressBar
+            android:id="@+id/ituneSearchProgressBar"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true" />
+        
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/itunesSearchBox"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:singleLine="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/searchHere"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="15sp"
+        android:background="@drawable/rounded_text_field"
+        android:inputType="textNoSuggestions"
+        android:imeOptions="actionSearch">
+
+    </EditText>
+    
+    <ListView
+        android:id="@+id/itunesSearchList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent" />
+    
+
+</LinearLayout>

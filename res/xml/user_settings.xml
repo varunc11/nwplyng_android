@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <PreferenceCategory 
+        android:title="Email me when"
+        android:key="email_notifications">
+        
+        <CheckBoxPreference 
+            android:title="I climb up the career progression"
+            android:layout="@layout/custom_preference_checkbox"
+            android:key="career_check" />
+        
+        <CheckBoxPreference 
+            android:title="I become a manager"
+            android:layout="@layout/custom_preference_checkbox"
+            android:key="manager_check"/>
+        
+        <CheckBoxPreference 
+            android:title="I get ousted as manager"
+            android:layout="@layout/custom_preference_checkbox"
+            android:key="ousted_check"/>
+        
+        <CheckBoxPreference 
+            android:title="I unlock a record"
+            android:layout="@layout/custom_preference_checkbox"
+            android:key="record_check"/>
+        
+        <CheckBoxPreference 
+            android:title="Someone follows me"
+            android:layout="@layout/custom_preference_checkbox"
+            android:key="following_check"/>
+        
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="TOS &amp; Privacy Policy"
+        android:key="terms_policy">
+        
+        <Preference 
+            android:title="Terms of Service"
+            android:key="terms_of_service"/>
+        
+        <Preference 
+            android:title="Privacy Policy"
+            android:key="privacy_policy"/>
+            
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="Logout"
+        android:key="logout">
+        
+        <Preference 
+            android:title="Logout"
+            android:summary="Logout from #nwplyng"
+            android:key="logout_app"/>
+        
+    </PreferenceCategory>
+
+</PreferenceScreen>

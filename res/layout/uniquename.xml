@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:background="#E3E3E3" >
+
+    <RelativeLayout
+        android:id="@+id/uniq_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="47dp"
+        android:background="@drawable/navigation">
+        
+        <ProgressBar
+            android:id="@+id/activityIndicator_uniquename"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true" />
+        
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/uniqueNameLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/unique"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/uniqueNameInputBox"
+        android:gravity="center"/>
+    
+    <EditText 
+        android:id="@+id/uniqueNameInputBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:layout_above="@+id/centerline"
+        android:hint="@string/hint"
+        android:singleLine="true"
+        android:inputType="textNoSuggestions"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@drawable/rounded_text_field"
+        android:imeOptions="actionDone"
+        android:maxLength="12"/>
+    
+    <TextView 
+        android:id="@+id/centerline"
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:layout_centerInParent="true"/>
+    
+    <TextView 
+        android:id="@+id/availableText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uniqueNameInputBox"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    
+    <Button 
+        android:id="@+id/goButton"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="65dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="@string/go"/>
+    
+    
+</RelativeLayout>
