@@ -119,5 +119,15 @@
 	<string name="find_friends">find friends</string>
 	<string name="search_users">search users</string>
 	<string name="search_nwplyng">search for nwplyng user</string>
+	
+	<!-- App credentials -->
+	<string name="CLIENT_ID">XF5SZAHOXOXGRIHUWTH20PE2YBSZXHDEWJQATBYITYFSMEDP</string>
+	<string name="CLIENT_SECRET">Z4H1LNUTJFMRVOCHH5T2EU3RXTN2P01W1TF4CZSH0KHAS2QW</string>
+	<string name="APP_ID">379326712094413</string>
+	<string name="CONSUMER_KEY">2CB7yALmETWriKYnu5OiyQ</string>
+	<string name="CONSUMER_SECRET">UiUkOhm9uRIQWtufuhWmYvPvR3xVeOIlHOEjPD6E</string>
+	<string name="NWPLYNG_SECRET_KEY">3485879cdd7b6656151473f5982d8abfc137cbb0</string>
+
+	
     
 </resources>

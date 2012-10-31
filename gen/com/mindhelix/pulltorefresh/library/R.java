@@ -602,7 +602,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int profile_menu=0x7f0b0001;
     }
     public static final class string {
+        public static final int APP_ID=0x7f080063;
+        /**  App credentials 
+         */
+        public static final int CLIENT_ID=0x7f080061;
+        public static final int CLIENT_SECRET=0x7f080062;
+        public static final int CONSUMER_KEY=0x7f080064;
+        public static final int CONSUMER_SECRET=0x7f080065;
         public static final int Following=0x7f080036;
+        public static final int NWPLYNG_SECRET_KEY=0x7f080066;
         public static final int add_friend=0x7f080025;
         public static final int app_name=0x7f080006;
         public static final int badge_beatle=0x7f080039;
@@ -716,12 +724,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrAdapterViewBackground com.mindhelix.nwplyng:ptrAdapterViewBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrDrawable com.mindhelix.nwplyng:ptrDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrHeaderBackground com.mindhelix.nwplyng:ptrHeaderBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrMode com.mindhelix.nwplyng:ptrMode}</code></td><td>         <attr name="ptrHeaderTextColor" format="reference|color" /> 
+           <tr><td><code>{@link #PullToRefresh_ptrAdapterViewBackground com.nwplyng.android.activities:ptrAdapterViewBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrDrawable com.nwplyng.android.activities:ptrDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrHeaderBackground com.nwplyng.android.activities:ptrHeaderBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrMode com.nwplyng.android.activities:ptrMode}</code></td><td>         <attr name="ptrHeaderTextColor" format="reference|color" /> 
          <attr name="ptrHeaderSubTextColor" format="reference|color" /> </td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrShowIndicator com.mindhelix.nwplyng:ptrShowIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrShowIndicator com.nwplyng.android.activities:ptrShowIndicator}</code></td><td></td></tr>
            </table>
            @see #PullToRefresh_ptrAdapterViewBackground
            @see #PullToRefresh_ptrDrawable
@@ -734,7 +742,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010004
         };
         /**
-          <p>This symbol is the offset where the {@link com.mindhelix.nwplyng.R.attr#ptrAdapterViewBackground}
+          <p>This symbol is the offset where the {@link com.nwplyng.android.activities.R.attr#ptrAdapterViewBackground}
           attribute's value can be found in the {@link #PullToRefresh} array.
 
 
@@ -746,7 +754,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int PullToRefresh_ptrAdapterViewBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link com.mindhelix.nwplyng.R.attr#ptrDrawable}
+          <p>This symbol is the offset where the {@link com.nwplyng.android.activities.R.attr#ptrDrawable}
           attribute's value can be found in the {@link #PullToRefresh} array.
 
 
@@ -756,7 +764,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int PullToRefresh_ptrDrawable = 4;
         /**
-          <p>This symbol is the offset where the {@link com.mindhelix.nwplyng.R.attr#ptrHeaderBackground}
+          <p>This symbol is the offset where the {@link com.nwplyng.android.activities.R.attr#ptrHeaderBackground}
           attribute's value can be found in the {@link #PullToRefresh} array.
 
 
@@ -789,7 +797,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int PullToRefresh_ptrMode = 2;
         /**
-          <p>This symbol is the offset where the {@link com.mindhelix.nwplyng.R.attr#ptrShowIndicator}
+          <p>This symbol is the offset where the {@link com.nwplyng.android.activities.R.attr#ptrShowIndicator}
           attribute's value can be found in the {@link #PullToRefresh} array.
 
 
